@@ -7,20 +7,27 @@ import { Input } from "./components/ui/input";
 import { Textarea } from "./components/ui/textarea";
 import { Github, Linkedin, Mail, ExternalLink, Code2 } from "lucide-react";
 import image from './img/Me.jpg'
+import physics from "./img/physics.png";
+import ts from "./img/typescript.png";
+import node from "./img/programing.png";
+import mysql from "./img/mysql.png";
+import js from "./img/js.png";
+import git from "./img/social.png";
+
 type users = {
   name:string,
   email:string,
   message: string
 }
 const Index = () => {
-  const skills = [
-    { name: "React", icon: "⚛️" },
-    { name: "TypeScript", icon: "📘" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "MySQL", icon: "🗄️" },
-    { name: "JavaScript", icon: "💛" },
-    { name: "Git", icon: "📦" },
-  ];
+ const skills = [
+  { name: "React", icon: physics },
+  { name: "TypeScript", icon: ts },
+  { name: "Node.js", icon: node },
+  { name: "MySQL", icon: mysql },
+  { name: "JavaScript", icon: js },
+  { name: "Git", icon: git },
+]
 
   const projects = [
     {
@@ -139,7 +146,7 @@ const Index = () => {
             {skills.map((skill) => (
               <Card key={skill.name} className="group hover:shadow-lg transition-all hover:border-primary/50">
                 <CardContent className="flex flex-col items-center justify-center p-6 space-y-3">
-                  <span className="text-4xl group-hover:scale-110 transition-transform">{skill.icon}</span>
+                  <span className="text-4xl group-hover:scale-110 transition-transform"><img src={skill.icon} /></span>
                   <p className="font-medium text-sm text-center">{skill.name}</p>
                 </CardContent>
               </Card>
