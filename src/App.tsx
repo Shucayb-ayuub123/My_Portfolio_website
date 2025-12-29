@@ -41,8 +41,8 @@ const Index = () => {
       title: "Task Management App",
       description: "React-based task manager with drag-and-drop functionality and real-time updates.",
       image: "/placeholder.svg",
-      liveUrl: "#",
-      sourceUrl: "#",
+      liveUrl: "https://todo-app-klcq.vercel.app/",
+      sourceUrl: "https://github.com/Shucayb-ayuub123/TODO_APP",
     },
     {
       title: "Weather Dashboard",
