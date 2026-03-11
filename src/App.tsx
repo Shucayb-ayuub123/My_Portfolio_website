@@ -91,6 +91,7 @@ const Index = () => {
           src={image}
           alt="Shu'aib Ayoub"
           className="w-64 sm:w-80 md:w-80 lg:w-96 rounded-2xl shadow-2xl object-cover"
+          
         />
       </div>
 
@@ -223,12 +224,12 @@ const Index = () => {
                   <p className="text-center text-sm text-muted-foreground mb-4">Or connect with me on</p>
                   <div className="flex justify-center gap-4">
                     <Button variant="outline" size="icon" className="rounded-full" asChild>
-                      <a href="#" aria-label="GitHub">
+                      <a href="https://github.com/Shucayb-ayuub123" aria-label="GitHub">
                         <Github className="h-5 w-5" />
                       </a>
                     </Button>
                     <Button variant="outline" size="icon" className="rounded-full" asChild>
-                      <a href="#" aria-label="LinkedIn">
+                      <a href="https://www.linkedin.com/in/shu-aib-ayoub-undefined-0b0844285/" aria-label="LinkedIn">
                         <Linkedin className="h-5 w-5" />
                       </a>
                     </Button>
