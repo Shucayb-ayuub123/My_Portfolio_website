@@ -34,8 +34,9 @@ const Index = () => {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce application with user authentication, cart functionality, and payment integration.",
       image: "https://images.unsplash.com/photo-1557821552-17105176677c",
-      liveUrl: "#",
-      sourceUrl: "#",
+      liveUrl: "https://shopmate-express.vercel.app/",
+      sourceUrl: "https://github.com/Shucayb-ayuub123/shopmate-express",
+      
     },
     {
       title: "Task Management App",
