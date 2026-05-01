@@ -129,11 +129,7 @@ const Index = () => {
             <Card className="border-primary/10">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground leading-relaxed text-center md:text-lg">
-                  I'm a dedicated Computer Science student with a passion for creating elegant solutions to complex problems. 
-                  My journey in technology has led me to explore full-stack development, where I combine creativity with 
-                  technical skills to build user-friendly applications. I'm constantly learning and adapting to new technologies, 
-                  with a focus on writing clean, maintainable code and delivering exceptional user experiences.
-                </p>
+                I am a dedicated Computer Science professional with a passion for creating elegant solutions to complex problems. My journey in technology has led me to specialize in full-stack development, where I combine creativity with technical expertise to build scalable and user-friendly applications. I continuously learn and adapt to new technologies, with a strong focus on writing clean, maintainable code and delivering high-quality user experiences.         </p>
               </CardContent>
             </Card>
           </div>
