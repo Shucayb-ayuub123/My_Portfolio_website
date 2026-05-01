@@ -15,19 +15,19 @@ import js from "./img/js.png";
 import git from "./img/social.png";
 
 type users = {
-  name:string,
-  email:string,
+  name: string,
+  email: string,
   message: string
 }
 const Index = () => {
- const skills = [
-  { name: "React", icon: physics },
-  { name: "TypeScript", icon: ts },
-  { name: "Node.js", icon: node },
-  { name: "MySQL", icon: mysql },
-  { name: "JavaScript", icon: js },
-  { name: "Git", icon: git },
-]
+  const skills = [
+    { name: "React", icon: physics },
+    { name: "TypeScript", icon: ts },
+    { name: "Node.js", icon: node },
+    { name: "MySQL", icon: mysql },
+    { name: "JavaScript", icon: js },
+    { name: "Git", icon: git },
+  ]
 
   const projects = [
     {
@@ -36,19 +36,19 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1557821552-17105176677c",
       liveUrl: "https://shopmate-express.vercel.app/",
       sourceUrl: "https://github.com/Shucayb-ayuub123/shopmate-express",
-      
+
     },
     {
       title: "Task Management App",
       description: "React-based task manager with drag-and-drop functionality and real-time updates.",
-       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b",
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b",
       liveUrl: "https://todo-app-klcq.vercel.app/",
       sourceUrl: "https://github.com/Shucayb-ayuub123/TODO_APP",
     },
     {
       title: "Weather Dashboard",
       description: "Interactive weather dashboard using external APIs with data visualization.",
-          image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b",
       liveUrl: "#",
       sourceUrl: "#",
     },
@@ -65,7 +65,7 @@ const Index = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://formspree.io/f/mdkwpnqo" , formData);
+      const response = await axios.post("https://formspree.io/f/mdkwpnqo", formData);
 
       if (response) {
         setStatus("✅ Message sent successfully!");
@@ -82,43 +82,43 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background scroll-smooth">
       {/* Hero Section */}
-     <section className="relative overflow-hidden">
-  <div className="container relative mx-auto px-4 py-16 md:py-24 lg:py-32">
-    <div className="flex flex-col-reverse gap-y-12 md:flex-row items-center text-center md:text-left md:space-x-12  md:space-y-0">
-      
-      {/* Left: Image */}
-      <div className="flex-1 flex justify-center">
-        <img
-          src={image}
-          alt="Shu'aib Ayoub"
-          className="w-64 sm:w-80 md:w-80 lg:w-96 rounded-2xl shadow-2xl object-cover"
-          
-        />
-      </div>
+      <section className="relative overflow-hidden">
+        <div className="container relative mx-auto px-4 py-16 md:py-24 lg:py-32">
+          <div className="flex flex-col-reverse gap-y-12 md:flex-row items-center text-center md:text-left md:space-x-12  md:space-y-0">
 
-      {/* Right: Text */}
-      <div className="flex-1 flex flex-col items-center md:items-center space-y-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-          Shu'aib Ayoub
-        </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium">
-          Aspiring Full Stack Developer
-        </p>
-        <p className="text-base md:text-lg text-muted-foreground max-w-2xl break-words">
-          Computer Science student passionate about building <br /> innovative web applications.
-        </p>
+            {/* Left: Image */}
+            <div className="flex-1 flex justify-center">
+              <img
+                src={image}
+                alt="Shu'aib Ayoub"
+                className="w-64 sm:w-80 md:w-80 lg:w-96 rounded-2xl shadow-2xl object-cover"
 
-        <Button
-          size="lg"
-          className="rounded-full mt-4 px-8 shadow-lg hover:shadow-xl transition-all"
-        >
-          <a href="#Projects">View My Work</a>
-          <ExternalLink className="ml-2 h-4 w-4" />
-        </Button>
-      </div>
-    </div>
-  </div>
-</section>
+              />
+            </div>
+
+            {/* Right: Text */}
+            <div className="flex-1 flex flex-col items-center md:items-center space-y-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                Shu'aib Ayoub
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium">
+                Aspiring Full Stack Developer
+              </p>
+              <p className="text-base md:text-lg text-muted-foreground max-w-2xl break-words">
+                Computer Science student passionate about building <br /> innovative web applications.
+              </p>
+
+              <Button
+                size="lg"
+                className="rounded-full mt-4 px-8 shadow-lg hover:shadow-xl transition-all"
+              >
+                <a href="#Projects">View My Work</a>
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* About Me Section */}
@@ -129,7 +129,10 @@ const Index = () => {
             <Card className="border-primary/10">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground leading-relaxed text-center md:text-lg">
-                I am a dedicated Computer Science professional with a passion for creating elegant solutions to complex problems. My journey in technology has led me to specialize in full-stack development, where I combine creativity with technical expertise to build scalable and user-friendly applications. I continuously learn and adapt to new technologies, with a strong focus on writing clean, maintainable code and delivering high-quality user experiences.         </p>
+                  I am a dedicated Computer Science professional with a passion for creating elegant solutions <br />
+                   to complex problems. My journey in technology has led me to specialize in full-stack <br />
+                    development, where I combine creativity with technical expertise to build scalable and user-friendly applications. I continuously learn and adapt to new technologies, with a strong focus on writing clean, maintainable code and delivering high-quality user experiences.        
+                   </p>
               </CardContent>
             </Card>
           </div>
@@ -216,7 +219,7 @@ const Index = () => {
                   </div>
                   <Button type="submit" className="w-full">Send Message</Button>
                 </form>
-                
+
                 <div className="mt-8 pt-8 border-t">
                   <p className="text-center text-sm text-muted-foreground mb-4">Or connect with me on</p>
                   <div className="flex justify-center gap-4">
