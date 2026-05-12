@@ -10,7 +10,7 @@ const services = [
   {
     icon: <FiLayout size={32} />,
     title: 'Frontend Development',
-    description: 'Creating intuitive user interfaces with React, ensuring seamless user experiences across all devices.',
+    description: 'Creating intuitive users interfaces with React, ensuring seamless user experiences across all devices.',
   },
   {
     icon: <FiServer size={32} />,
