@@ -33,7 +33,7 @@ export default function Navbar({ activeSection }) {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#home" className="nav-logo" onClick={(e) => handleClick(e, '#home')}>
-          <span className="logo-text">Portfolio</span>
+          <span className="logo-text">shu'aib.dev</span>
         </a>
 
         <div className={`nav-links${mobileOpen ? ' open' : ''}`}>
