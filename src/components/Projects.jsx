@@ -6,8 +6,8 @@ const projects = [
     title: 'Student Portal',
     description: 'A comprehensive web portal for students featuring course registration, grade tracking, attendance management, and communication tools between students and faculty.',
     tech: ['React', 'Node.js', 'Express', 'MySQL'],
-    github: '',
-    live: '',
+    github: '#',
+    live: '#',
     color: '#2563eb',
   },
   {
