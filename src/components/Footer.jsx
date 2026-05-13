@@ -52,9 +52,9 @@ export default function Footer() {
 
           <div className="footer-contact">
             <h4 className="footer-links-title">Contact</h4>
-            <p>your.email@example.com</p>
-            <p>+1 (234) 567-890</p>
-            <p>New York, USA</p>
+            <p>shucayb594@gmail.com</p>
+            <p>+252 637833207</p>
+            <p>Hargeisa  , somaliland</p>
           </div>
         </div>
 
