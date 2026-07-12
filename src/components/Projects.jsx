@@ -3,11 +3,10 @@ import useScrollReveal from '../hooks/useScrollReveal'
 
 const projects = [
   {
-    title: 'Student Portal',
-    description: 'A comprehensive web portal for students featuring course registration, grade tracking, attendance management, and communication tools between students and faculty.',
-    tech: ['React', 'Node.js', 'Express', 'MySQL'],
+   title: 'Auth MERN Project',
+description: 'A full-stack authentication application developed using MongoDB, Express.js, React, and Node.js. It provides secure user authentication with JWT, email verification via OTP, password recovery, and protected dashboard access.',   tech: ['React', 'Node.js', 'Express', 'MongoDB'],
     github: '#',
-    live: '#',
+    live: 'https://authentifications-7651.vercel.app/',
     color: '#2563eb',
   },
   {
