@@ -30,7 +30,7 @@ const projects = [
     title: 'Task Management App',
     description: 'Collaborative project management tool with real-time updates, task assignment, progress tracking, and team communication features.',
     tech: ['React', 'Node.js', 'Postgres'],
-    github: 'https://github.com/Shucayb-ayuub123/Task_Manager',
+    github: 'https://github.com/Shucayb-ayuub123/Task_Manager_with_drizzle',
     live: 'https://task-manager-with-drizzle.vercel.app/',
     color: '#d97706',
   },
