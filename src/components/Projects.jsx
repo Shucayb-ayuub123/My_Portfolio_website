@@ -29,9 +29,9 @@ const projects = [
   {
     title: 'Task Management App',
     description: 'Collaborative project management tool with real-time updates, task assignment, progress tracking, and team communication features.',
-    tech: ['React', 'Node.js', 'Mysql'],
+    tech: ['React', 'Node.js', 'Postgres'],
     github: 'https://github.com/Shucayb-ayuub123/Task_Manager',
-    live: 'https://todo-app-klcq.vercel.app/',
+    live: 'https://task-manager-with-drizzle.vercel.app/',
     color: '#d97706',
   },
 ]
