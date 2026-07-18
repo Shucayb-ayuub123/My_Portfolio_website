@@ -552,18 +552,37 @@
   background: var(--white);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.projects-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.projects-slider {
+  display: flex;
   gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 8px 0;
+  flex: 1;
+}
+
+.projects-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .project-card {
+  flex: 0 0 calc(50% - 16px);
+  min-width: 0;
   background: var(--white);
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--gray-200);
   transition: var(--transition);
+  scroll-snap-align: start;
 }
 
 .project-card:hover {
@@ -686,8 +705,64 @@
   gap: 10px;
 }
 
+.slider-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  color: var(--gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.slider-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray-300);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.slider-dot.active {
+  background: var(--primary);
+  width: 28px;
+  border-radius: 5px;
+}
+
+.slider-dot:hover {
+  background: var(--primary);
+}
+
 @media (max-width: 768px) {
-  .projects-grid { grid-template-columns: 1fr; }
+  .project-card {
+    flex: 0 0 calc(100% - 32px);
+  }
+
+  .slider-btn {
+    display: none;
+  }
 }
 
 /* ========== SERVICES ========== */
