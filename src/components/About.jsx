@@ -36,7 +36,7 @@ export default function About() {
         <div className="about-grid animate-on-scroll">
           <div className="about-image-wrapper">
             <div className="about-image-frame">
-              <img src="./profile.jpeg" alt="Profile" className="about-image" />
+              <img src="./ChatGPT Image Jul 18, 2026, 07_41_55 PM.png" alt="Profile" className="about-image" />
             </div>
             <div className="about-image-shape" />
           </div>
